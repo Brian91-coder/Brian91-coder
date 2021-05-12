@@ -1,0 +1,2 @@
+add_action('init', 'create_post_type'); function create_post_type() { 
+	register_post_type('course', array( 'labels' => array( 'name' => __('Courses'), 'singular_name' => __('Course') ), 'public' => true, 'has_archive' => true, ) ); }
